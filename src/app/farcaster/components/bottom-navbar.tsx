@@ -6,6 +6,7 @@ import {
   CircleUser,
   CogIcon,
   Gamepad2,
+  GamepadIcon,
   HomeIcon,
   InfoIcon,
 } from "lucide-react";
@@ -18,6 +19,7 @@ const navRoutes = [
   "/farcaster/profile",
   "/farcaster/settings",
   "/farcaster/minesweeper",
+  "/farcaster/tic-tac-toe",
 ] as const;
 
 type NavRoutes = (typeof navRoutes)[number];
@@ -54,6 +56,11 @@ const navSetup: Record<
     name: "Minesweeper",
     isActive: ["/farcaster/minesweeper"],
     icon: <Gamepad2 className="size-6" />,
+  },
+  "/farcaster/tic-tac-toe": {
+    name: "Tic Tac Toe",
+    isActive: ["/farcaster/tic-tac-toe"],
+    icon: <GamepadIcon className="size-6" />,
   },
 } as const;
 
