@@ -1,4 +1,5 @@
 import { FarcasterProviders } from "@/app/farcaster/providers";
+import { Toaster } from "@/components/ui/sonner";
 import { getBaseUrl } from "@/lib/constants";
 import "@/styles/globals.css";
 
@@ -54,6 +55,7 @@ export default function RootLayout({
       <meta name="fc:frame" content={stringifiedFrame} />
       <body className="overscroll-none">
         <FarcasterProviders>{children}</FarcasterProviders>
+        <Toaster position="top-center" />
       </body>
     </html>
   );
