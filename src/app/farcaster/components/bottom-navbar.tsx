@@ -2,22 +2,12 @@
 
 import { BottomNavbarWrapper } from "@/app/farcaster/components/bottom-navbar-wrapper";
 import { cn } from "@/lib/utils";
-import {
-  CircleUser,
-  CogIcon,
-  Gamepad2,
-  GamepadIcon,
-  HomeIcon,
-  InfoIcon,
-} from "lucide-react";
+import { Gamepad2, GamepadIcon, HomeIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navRoutes = [
   "/farcaster",
-  "/farcaster/about",
-  "/farcaster/profile",
-  "/farcaster/settings",
   "/farcaster/minesweeper",
   "/farcaster/tic-tac-toe",
 ] as const;
@@ -36,21 +26,6 @@ const navSetup: Record<
     name: "Home",
     isActive: ["/farcaster"],
     icon: <HomeIcon className="size-6" />,
-  },
-  "/farcaster/about": {
-    name: "About",
-    isActive: ["/farcaster/about"],
-    icon: <InfoIcon className="size-6" />,
-  },
-  "/farcaster/profile": {
-    name: "Profile",
-    isActive: ["/farcaster/profile"],
-    icon: <CircleUser className="size-6" />,
-  },
-  "/farcaster/settings": {
-    name: "Settings",
-    isActive: ["/farcaster/settings"],
-    icon: <CogIcon className="size-6" />,
   },
   "/farcaster/minesweeper": {
     name: "Minesweeper",
