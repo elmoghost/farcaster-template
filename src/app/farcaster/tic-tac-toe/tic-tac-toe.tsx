@@ -65,13 +65,13 @@ export function TicTacToe() {
   if (mode === null) {
     return (
       <div className="flex flex-col items-center gap-4">
-        <h2 className="text-xl font-bold">Tic-Tac-Toe</h2>
+        <h2 className="mb-4 text-3xl font-bold">Tic-Tac-Toe</h2>
         <div className="text-lg">Select Game Mode</div>
         <div className="flex flex-col gap-4">
           <Button onClick={() => handleModeSelect("local")}>
             Local (2 Players)
           </Button>
-          <Button disabled={true} onClick={() => handleModeSelect("cpu")}>
+          <Button onClick={() => handleModeSelect("cpu")} disabled={true}>
             vs CPU
           </Button>
         </div>

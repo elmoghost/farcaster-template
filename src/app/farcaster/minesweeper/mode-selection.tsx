@@ -9,7 +9,7 @@ type ModeSelectionProps = {
 export function ModeSelection({ setGameMode }: ModeSelectionProps) {
   return (
     <div className="flex flex-col items-center gap-4">
-      <h2 className="text-3xl font-bold mb-4">Minesweeper</h2>
+      <h2 className="mb-4 text-3xl font-bold">Minesweeper</h2>
       <div className="text-lg">Select Game Mode</div>
       <div className="flex flex-col gap-4">
         <Button onClick={() => setGameMode("15")}>15 Levels</Button>
