@@ -19,13 +19,13 @@ export const farcasterManifest: Manifest = {
   frame: {
     version: "1",
     name: "Example Frame",
-    iconUrl: "https://farcaster-template.vercel.app/icon.png",
-    homeUrl: "https://farcaster-template.vercel.app",
-    imageUrl: "https://farcaster-template.vercel.app/image.png",
+    iconUrl: `${appUrl}/icon.png`,
+    homeUrl: `${appUrl}/farcaster`,
+    imageUrl: `${appUrl}/image.png`,
     buttonTitle: "Check this out",
-    splashImageUrl: "https://farcaster-template.vercel.app/splash.png",
+    splashImageUrl: `${appUrl}/splash.png`,
     splashBackgroundColor: "#eeccff",
-    webhookUrl: "https://farcaster-template.vercel.app/api/webhook",
+    webhookUrl: `${appUrl}/api/webhook`,
     subtitle: "Test your Farcaster mini app",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
